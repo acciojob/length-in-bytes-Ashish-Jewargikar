@@ -1,5 +1,8 @@
 const byteSize = (str) => {
   // write your code here
+	const blob = new Blob([str], { type: 'text/plain' });
+  // Return the size of the binary representation in bytes
+  return blob.size;
 };
 
 // Do not change the code below
